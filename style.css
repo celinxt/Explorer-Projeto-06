@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+/* Container #1 */
+main {
+  font-family: "Epilogue", sans-serif;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+}
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  color: #7158ef;
+}
+h3 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #090039;
+}
+#desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #0a0039a3;
+}
+a {
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #090039;
+}
+a:active {
+  font-weight: 600;
+}
+
+/* Container #2 */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+span {
+  font-weight: 800;
+  font-size: 7.2rem;
+  color: #090039;
+}
+li {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  color: #090039;
+  width: 32rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-bottom: 0.6rem;
+}
+ul li:first-child {
+  gap: 4rem;
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+  }
+
+  /* Container #1 */
+  #container {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+  }
+  h3 {
+    width: 39vw;
+  }
+  #desc {
+    width: 30vw;
+  }
+  a:hover {
+    font-weight: 600;
+  }
+
+  /* Container #2 */
+  ul {
+    margin-top: 7vw;
+    gap: 6vw;
+  }
+  li {
+    width: 40rem;
+  }
+}
